@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Course table</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <table id="tb">
+      <tr>
+        <th>Course Name</th>
+        <th>Course Code</th>
+        <th>Language</th>
+        <th>Teacher</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Location</th>
+        <th>Duration</th>
+        <th>Operation</th>
+      </tr>
+    </table>
+    <button type="button" onclick="enableForm()">add course</button>
+    <form id="addCoursePage" name="page">
+      <fieldset id="fieldSet">
+        <legend id="legend">Add Course</legend>
+        <label id='num' hidden>-1</label>
+        <label for="cname">Course Name</label>
+        <input id="cname" type="text" /> <br />
+        <label for="ccode">Course Code</label>
+        <input id="ccode" type="text" /> <br />
+        <label for="Language">Language</label> <br />
+        <input type="radio" id="cn" name="Language" value="Chinese" checked/>
+        <label for="cn">Chinese</label>
+        <input type="radio" id="en" name="Language" value="English" />
+        <label for="en">English</label>
+        <input type="radio" id="bi" name="Language" value="Bilingual" />
+        <label for="bi">Bilingual</label> <br />
+        <label for="tname">Teacher</label>
+        <input id="tname" type="text" /><br />
+        <label for="courseDate">Date</label>
+        <input type="date" id="courseDate" name="Date" /><br />
+        <label for="courseTime">Time</label>
+        <input type="time" id="courseTime" name="Time" /><br />
+        <label for="locations">Locations</label>
+        <select name="loc" id="locations">
+          <option value="Building No.1 Lecture Hall">
+            Building No.1 Lecture Hall
+          </option>
+          <option value="Research Building Lecture Hall">
+            Research Building Lecture Hall
+          </option>
+          <option value="Library Conference Hall">
+            Library Conference Hall
+          </option>
+          <option value="Activity Room">Activity Room</option>
+        </select>
+        <br />
+        <label for="du">Duration</label>
+        <input id="du" type="text" /><br />
+        <button type="button" onclick="addRow()">Submit</button>
+        <button type="button" onclick="disableForm()">cancel</button>
+      </fieldset>
+    </form>
+
+  </body>
+</html>

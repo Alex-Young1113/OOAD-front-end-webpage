@@ -1,0 +1,43 @@
+table, th, td {
+  border:1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border-color: midnightblue;
+  border-width: 2px;
+}
+label{
+  font-family: 'Times New Roman', Times, serif;
+}
+legend{
+  text-shadow: 2px 2px grey;
+}
+button{
+  color:bisque;
+  background-color: rgb(65, 65, 231);
+}
+button:hover{
+  background-color: rgb(0, 166, 255);
+}
+th, td {
+  background-color:rgb(69, 166, 163);
+  border-style: outset;
+}
+td:hover{
+  background-color: aquamarine;
+}
+#addCoursePage{
+  display: none;
+}
+body{
+  background-color: rgb(239, 216, 141);
+  text-align: center;
+}
+#addCoursePage{
+  background-color: burlywood;
+  position: absolute;
+  text-align: center;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
